@@ -14,13 +14,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+import os
+os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
+from google.appengine.dist import use_library
+use_library('django', '1.2')
+
+
+
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util
-
+from google.appengine.ext.webapp import template
 
 class MainHandler(webapp.RequestHandler):
     def get(self):
-        self.response.out.write('Hello world!')
+        
+        path = os.path.join(os.path.dirname(__file__),'index.py.html')
+    	args = dict()
+    	self.response.out.write(template.render(path,args))
 
 
 def main():
