@@ -1,0 +1,131 @@
+/* css for ASDA price check */
+
+
+html, body {padding:0; margin:0}
+
+body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-serif;}
+.wrap {width:950px; margin-left:auto; margin-right:auto;background:#397807; padding:10px;margin-top:10px;}
+.wrap .header {
+    background:#fff;
+    padding :20px; 
+    height:50px; 
+    margin-bottom:10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    }
+.wrap .header img {margin-top:10px;}
+.wrap .header h1 {display:inline; margin-left:30px;}
+.wrap .header h1 span {font-weight:normal; font-size:90%;}
+/*.wrap .content .asda h2 {margin-top:0px;}*/
+.wrap .content ul li {list-style-type:none; margin-left:-15px;/* margin-top:5px;*/}
+.wrap .content ul {margin-left:-20px;}
+.wrap .content .asda ul li strong {display:block; height:85px;}
+.wrap .content h3 {margin-top:0px;}
+.wrap .content {
+    background:#fff;
+    padding:10px 10px 30px 10px ; 
+    margin-bottom:10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow:hidden;
+    }
+  
+.wrap .content .col-hero {
+    background:#C2D6B3;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    height:40px;
+    padding:10px 10px 10px 10px ;
+    margin-bottom:10px;
+}
+.wrap .content .col-hero h2 {
+    margin-top:3px;
+    display:inline-block;
+}
+
+.wrap .content .col-hero h2 a {
+    text-decoration:none;
+    color:#397807;
+    font-size:70%; 
+    border:1px solid #397807;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    padding:4px 12px 4px 12px;
+    background:#fff;
+    margin-top:4px;
+}
+    
+.wrap .content .col-hero h2 a:hover { 
+    background:#397807; 
+    color:#fff; 
+    } 
+    
+.wrap .content h2.hdr {margin-left:10px;} 
+  
+    
+.asda {
+    background:#C2D6B3;
+    padding:10px; 
+    border:1px solid #397807;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    width:202px;
+    float:left;
+    margin-right:10px;
+    }
+.asda .prod-hdr {display:block;height:85px;font-weight:bold;}
+.asda .price,     
+.asda h3 {color:#397807;} 
+     
+ .argos {
+     float:left;
+     width:202px; 
+     margin-right:12px; 
+     border:1px solid #397807;
+     -moz-border-radius:8px;
+     border-radius:8px;
+     padding:10px; 
+     color:#666;
+     }
+ .argos .prod-hdr {display:block;height:85px;font-weight:bold;}
+ .argos .price,     
+ .argos h3 {color:#E42528;}    
+  
+ .tesco {    
+     float:left;
+     width:202px; 
+     margin-right:12px; 
+     border:1px solid #397807;
+     -moz-border-radius:8px;
+     border-radius:8px;
+     padding:10px;
+     color:#666; 
+     }
+ .tesco .prod-hdr {display:block;height:85px;font-weight:bold;}
+ .tesco .price,
+ .tesco h3 {color:#00539F;}      
+ .sainsbury {
+     float:left;
+     width:202px; 
+     border:1px solid #397807;
+     -moz-border-radius:8px;
+     border-radius:8px;
+     padding:10px;
+     color:#666; 
+     }
+ .sainsbury .prod-hdr {display:block;height:85px; font-weight:bold;}
+ .sainsbury .price,      
+ .sainsbury h3 {color:#F26334;}     
+    
+    
+ .wrap .footer {
+     background:#C2D6B3;
+     padding:10px; 
+     height:50px;
+     -moz-border-radius: 8px;
+     border-radius: 8px;
+     }
+ 
+ #tv {display:none;}   
+    
+    
