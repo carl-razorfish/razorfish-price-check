@@ -16,6 +16,15 @@
 		document.getElementById('pod').style.display='block';
 		document.getElementById('tv').style.display='none';
 		}
+		
+		function toggle(id) {
+	       var e = document.getElementById(id);
+	       if(e.style.display == 'block')
+	          e.style.display = 'none';
+	       else
+	          e.style.display = 'block';
+	    }
+
 		</script>	
     </head>
     <body>
@@ -124,6 +133,9 @@
 						<li><span class="price">Price: 297.00</span></li>
 					</ul>
 				</div>
+				
+				<h3 class="details"><a href="#" onclick="toggle('del');return false" title="Show/Hide Delivery details">Show/Hide Delivery details</a></h3>
+				
 			</div>
 			
 			<!-- tv's -->
@@ -224,11 +236,69 @@
 						<li><span class="price">Price: 699.00</span></li>
 					</ul>
 				</div>
+				
+				<h3 class="details"><a href="#" onclick="toggle('del');return false" title="Show/Hide Delivery details">Show/Hide Delivery details</a></h3>
+				
+			</div>
+
+		<div class="content del" id="del">
+			<div class="asda">
+				<ul>
+					<li><span class="prod-hdr">Delivery</span></li>
+					<li>Small/Medium products (selected items) - 3 to 5 working day delivery - FREE</li>
+					<li>George and selected Small/Medium products - 2 to 3 working day delivery - £2.95</li>
+					<li>George and selected Small/Medium products - Named Day Delivery - £3.95</li>
+					<li>George and selected Small/Medium products - Next Day Delivery - £4.50</li>
+					<li>Larger Items - 5 to 10 day Standard Service or Named Day Service - From £8.95*</li>
+					<li>In Store Collection - 2 to 3 day delivery to store - FREE</li>
+					<span class="note">At this moment in time there are a number of areas that we can't provide a delivery service. This includes both Jersey & Guernsey. We will advise you of this during the checkout process. We are also unable to deliver to British Forces Posted Overseas.</span>
+				</ul>
 			</div>
 			
-			<div class="footer">
-				<p>© ASDA 2011</p>
+			<div class="argos">
+				<ul>
+					<li><span class="prod-hdr">Delivery</span></li>
+					<li>Small items (require 1 delivery person) - Next day (if you order before 3pm) - £5.95</li>
+					<li>Next day delivery - Next day (if you order before 3pm) - £5.95</li>
+					<li>Saturday delivery (available on selected products) - Saturdays 7am – 6pm - £8.95</li>
+					<li>Royal Mail (available on selected products) - Usually within 4 working days - FREE</li>
+					<li>Courier - Usually within 5 working daysFrom £5.95</li>
+					<li>In Store Collection - In stock items available for immediate pick-up & held until the next day. - Pay in-store when you collect.</li>
+					<span class="note">Free delivery on selected items (as shown in the product description).* - If your order is made up of a number items you just pay the one higher charge. - * £3.00 charge for Saturday delivery still applies</span>
+				</ul>
 			</div>
+			
+			<div class="tesco">
+				<ul>
+					<li><span class="prod-hdr">Delivery</span></li>
+					<li>Standard next day delivery (if ordered by 3pm Sunday to Friday) - Your order is charged at £2.74 for delivery</li>
+					<li>If your order totals £15 or more, enter the eCoupon code "FREEDELIVERY" on the checkout page; this will deduct the delivery charge from your order.</li>
+					<span class="note">Deliveries are made through Royal Mail and Hermes couriers and typically take 48 hours from the point of dispatch. However they can take up to 10 days.</span>
+				</ul>
+			</div>
+			
+			<div class="sainsbury">
+				<ul>
+					<li><span class="prod-hdr">Delivery</span></li>
+					<li> Standard delivery -  in 3-5 working days - £3.95</li>
+					<li>Next day delivery - You must order before 2pm to receive your order the next day - £4.95</li>
+					<li>Named day delivery - Orders for named day delivery will be delivered on the day of your choice Monday to Saturday in half day slots from 7am to 12pm or 12pm to 7pm -  £4.95</li>
+					<li>Saturday delivery - Orders for Saturday delivery can be placed using our named day service above - £4.95</li>
+					<li>Click & Collect - Available stores will be shown when you check out your order. FREE</li>
+					<li>Public holidays - Please note we do not deliver on public holidays or Sundays.</li>
+					<span class="note">Orders placed after 2pm will be delivered one day later - You will see the final delivery charge and time of your delivery on the checkout page when you order. Please check this carefully before confirming your order.</span>
+				</ul>
+			</div>	
+			
 		</div>
+		
+		<div class="footer">
+			<p>© ASDA 2011</p>
+		</div>
+		
+		</div>
+		
+		
+		
     </body>
 </html>

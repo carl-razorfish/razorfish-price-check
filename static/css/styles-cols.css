@@ -16,14 +16,13 @@ body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-s
 .wrap .header img {margin-top:10px;}
 .wrap .header h1 {display:inline; margin-left:30px;}
 .wrap .header h1 span {font-weight:normal; font-size:90%;}
-/*.wrap .content .asda h2 {margin-top:0px;}*/
 .wrap .content ul li {list-style-type:none; margin-left:-15px;/* margin-top:5px;*/}
 .wrap .content ul {margin-left:-20px;}
 .wrap .content .asda ul li strong {display:block; height:85px;}
 .wrap .content h3 {margin-top:0px;}
 .wrap .content {
     background:#fff;
-    padding:10px 10px 30px 10px ; 
+    padding:10px 10px 10px 10px ; 
     margin-bottom:10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -39,7 +38,7 @@ body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-s
     margin-bottom:10px;
 }
 .wrap .content .col-hero h2 {
-    margin-top:3px;
+    margin-top:0px;
     display:inline-block;
 }
 
@@ -54,11 +53,31 @@ body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-s
     background:#fff;
     margin-top:4px;
 }
-    
+
 .wrap .content .col-hero h2 a:hover { 
     background:#397807; 
     color:#fff; 
-    } 
+    }
+
+.wrap .content h3.details a {
+    text-decoration:none;
+    color:#397807;
+    font-size:50%; 
+    border:1px solid #397807;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    padding:4px 12px 4px 12px;
+    background:#fff;
+    margin-top:10px;
+    float:right;
+    margin-right:0px;
+}
+
+.wrap .content h3.details a:hover { 
+    background:#397807; 
+    color:#fff; 
+    }
+
     
 .wrap .content h2.hdr {margin-left:10px;} 
   
@@ -125,7 +144,18 @@ body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-s
      -moz-border-radius: 8px;
      border-radius: 8px;
      }
- 
+ #del,
  #tv {display:none;}   
     
-    
+.wrap .del {font-size:80%;}
+.wrap .del .asda .prod-hdr {display:block;height:25px;font-weight:bold;}
+.wrap .del .argos .prod-hdr {display:block;height:25px;font-weight:bold;color:#E42528;}
+.wrap .del .tesco .prod-hdr {display:block;height:25px;font-weight:bold;color:#00539F;}
+.wrap .del .sainsbury .prod-hdr {display:block;height:25px;font-weight:bold;color:#F26334;}
+.wrap .del ul li {margin-bottom:10px;}
+.wrap .del span.note {display:block;margin-top:10px; font-size:80%; margin-left:-15px;}
+.wrap .del .asda,
+.wrap .del .argos,
+.wrap .del .tesco,
+.wrap .del .sainsbury {height:540px;}
+   
