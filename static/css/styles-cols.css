@@ -18,7 +18,6 @@ body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-s
 .wrap .header h1 span {font-weight:normal; font-size:90%;}
 .wrap .content ul li {list-style-type:none; margin-left:-15px;/* margin-top:5px;*/}
 .wrap .content ul {margin-left:-20px;}
-.wrap .content .asda ul li strong {display:block; height:85px;}
 .wrap .content h3 {margin-top:0px;}
 .wrap .content {
     background:#fff;
@@ -26,7 +25,6 @@ body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-s
     margin-bottom:10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    overflow:hidden;
     }
   
 .wrap .content .col-hero {
@@ -43,6 +41,7 @@ body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-s
 }
 
 .wrap .content .col-hero h2 a {
+    /*
     text-decoration:none;
     color:#397807;
     font-size:70%; 
@@ -52,11 +51,33 @@ body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-s
     padding:4px 12px 4px 12px;
     background:#fff;
     margin-top:4px;
+    -moz-box-shadow:inset 0 0 10px #397807;
+    -webkit-box-shadow:inset 0 0 10px #397807;
+    box-shadow:inset 0 0 10px #397807;
+    */
+    text-decoration:none;
+    font-size:70%; 
+    font-weight:normal;
+    
+    border: 1px solid #397807;
+    background-color: #397807;
+    border-radius: 15px;
+    box-shadow: inset 1px 6px 12px #C2D6B3, inset -1px -10px 5px #397807, 1px 2px 1px black;
+    -o-box-shadow: inset 1px 6px 12px #C2D6B3, inset -1px -10px 5px #397807, 1px 2px 1px black;
+    -webkit-box-shadow: inset 1px 6px 12px #C2D6B3, inset -1px -10px 5px #397807, 1px 2px 1px black;
+    -moz-box-shadow: inset 1px 6px 12px #C2D6B3, inset -1px -10px 5px #397807, 1px 2px 1px black;
+    color: white;
+    /*text-shadow: 1px 1px 1px black;*/
+    padding: 4px 12px;
 }
 
 .wrap .content .col-hero h2 a:hover { 
     background:#397807; 
-    color:#fff; 
+    color:#fff;
+      
+    -moz-box-shadow:inset 0 0 10px #fff;
+    -webkit-box-shadow:inset 0 0 10px #fff;
+    box-shadow:inset 0 0 10px #fff;
     }
 
 .wrap .content h3.details a {
@@ -142,7 +163,7 @@ body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-s
      padding:10px; 
      height:50px;
      -moz-border-radius: 8px;
-     border-radius: 8px;
+     border-radius: 8px;  
      }
  #del,
  #tv {display:none;}   
@@ -158,4 +179,40 @@ body {color:#397807; background:#fff;font-family: Tahoma,Arial,Helvetical,sans-s
 .wrap .del .argos,
 .wrap .del .tesco,
 .wrap .del .sainsbury {height:540px;}
+
+.img-box {
+    background:#fff;
+    padding:4px;
+    border:1px solid #C2D6B3;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-align:center;
+    display:block;
+}
+
+#scale {  
+    -webkit-transition: all 500ms ease 0s; 
+    -moz-transition: all 500ms ease 0s;
+    -o-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+}
+#scale:hover {    
+    -webkit-transform: scale(1.25, 1.25); 
+    -moz-transform: scale(1.25, 1.25); 
+    -o-transform: scale(1.25, 1.25);  
+    transform: scale(1.25, 1.25);
+
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px #666;
+    box-shadow: 5px 5px 5px #666; 
+}
+
+.line {border-top:1px solid #ccc; height:12px; margin-top:-15px;}
+.asda .line {border-top:1px solid #fff; height:12px; margin-top:-15px;}
+
+
+/* clear floats */
+.cf:after                            {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.cf                                  {height:1%;}
+.clear                               {clear:both;}
    
