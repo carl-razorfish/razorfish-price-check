@@ -3,7 +3,6 @@
     <head>
         <title>ASDA Price check</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<link rel="stylesheet" href="static/css/styles-cols.css"/>
 		<script type="text/javascript">
 		function tvs()
 		{
@@ -25,7 +24,21 @@
 	          e.style.display = 'block';
 	    }
 
+		if(navigator.userAgent.match(/iPhone/i)){
+		document.write("<link rel='stylesheet' href='static/css/styles-iphone.css'/>")
+		document.write("<meta name='viewport' content='width=device-width' />")	
+		}
+		else{
+		document.write("<link rel='stylesheet' href='static/css/styles-cols.css'/>")
+		}
+		
+
+
 		</script>
+		
+		
+		
+		
 		<link rel="shortcut icon" href="http://demandware.edgesuite.net/aacd_prd/on/demandware.static/Sites-ASDA-Site/-/default/v1314941478064/favicon.ico" />	
     </head>
     <body>
@@ -310,7 +323,7 @@
 		<div class="content del cf" id="del">
 			<div class="asda">
 				<ul>
-					<li><span class="prod-hdr">Delivery</span></li>
+					<li><span class="prod-hdr">ASDA Delivery</span></li>
 					<li>*The carrier will deliver in 2-3 working days from completion of your order. They will not contact you beforehand, and could deliver 7am-7pm</li>
 					<li>George and selected Small/Medium products - 2 to 3 working day delivery - £2.95</li>
 					<li>George and selected Small/Medium products - Named Day Delivery - £3.95</li>
@@ -323,7 +336,7 @@
 			
 			<div class="argos">
 				<ul>
-					<li><span class="prod-hdr">Delivery</span></li>
+					<li><span class="prod-hdr">Argos Delivery</span></li>
 					<li>*Standard delivery: £0.00</li>
 					<li>Small items (require 1 delivery person) - Next day (if you order before 3pm) - £5.95</li>
 					<li>Next day delivery - Next day (if you order before 3pm) - £5.95</li>
@@ -337,7 +350,7 @@
 			
 			<div class="tesco">
 				<ul>
-					<li><span class="prod-hdr">Delivery</span></li>
+					<li><span class="prod-hdr">Tescos Delivery</span></li>
 					<li>*Between 7am-7pm if you checkout before 3pm - £5.00</li>
 					<li>Standard next day delivery (if ordered by 3pm Sunday to Friday) - Your order is charged at £5.00 for delivery</li>
 					<li>If your order totals £15 or more, enter the eCoupon code "FREEDELIVERY" on the checkout page; this will deduct the delivery charge from your order.</li>
@@ -347,7 +360,7 @@
 			
 			<div class="sainsbury">
 				<ul>
-					<li><span class="prod-hdr">Delivery</span></li>
+					<li><span class="prod-hdr">Sainsburys Delivery</span></li>
 					<li>*Standard delivery in 3-5 working days  £3.95</li>
 					<li>Next day delivery - You must order before 3pm to receive your order the next day - £4.95</li>
 					<li>Named day delivery - Orders for named day delivery will be delivered on the day of your choice Monday to Saturday in half day slots from 7am to 12pm or 12pm to 7pm -  £4.95</li>
